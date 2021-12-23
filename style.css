@@ -1,2 +1,8 @@
 body {
-background: blue}
+  background: blue;
+}
+
+.manutencao {
+  width: 50%;
+  justify-content: center;
+}
