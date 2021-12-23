@@ -1,11 +1,11 @@
 body {
-  background: blue;
 }
 
 .manutencao {
-  width: 50%;
-  text-align: center;
-  align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.manutencao img {
+  width: 50vw;
 }
