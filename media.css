@@ -1,0 +1,450 @@
+/*--------------------------------------------------------------
+- Layout Responsivo
+--------------------------------------------------------------*/
+@media (max-width: 1024px){
+    .rodape-endereco {
+        width: 50%;
+    }
+	#nome_formulario, #telefone_formulario, #email_formulario {
+		margin-bottom: 10px;
+		width: 90%;
+	}
+	select#como_nos_conheceu_formulario {
+		margin-bottom: 10px;
+		width: 90%;
+	}
+	#mensagem_formulario-home {
+		height: 184px!important;
+		width: 60%!important;
+	}
+	.box-campos-formulario {
+	    width: 100%;
+	}
+	.formulario-home, .formulario {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.rodape {
+		color: #fff;
+		font-size: 12px;
+		padding-top: 35px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	#adpt-galeria {
+		flex-wrap: wrap;
+	}
+	#adapt-galeria .blocos {
+		background-color: #f1f1f1;
+		border-radius: 20px;
+		max-width: 340px;
+		min-width: 154px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 200px;
+		margin: 0 8px;
+		padding: 10px;
+		text-align: center;
+		-webkit-transition: all 300ms linear 0s;
+		-o-transition: all 300ms linear 0s;
+		transition: all 300ms linear 0s;
+	}
+	.menuzera nav {
+		width: 31vw;
+	}
+	.selosconf {
+		flex-wrap: wrap;	
+	}
+	.topo .menu-principal {
+		width: 80%;
+	}
+	.topo {
+		height: 200px;
+	}
+	.topo .menu-principal {
+		margin: 0 auto;
+	}	
+}
+@media (max-width:768px) {
+    .mapa-contato{
+        width: 100%;
+    }
+    #nome_formulario, #telefone_formulario, #email_formulario {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+    .formulario input {
+        width: 100%;
+    }
+    .box-campos-formulario {
+		display: flex;
+		clear: both;
+		line-height: 2em;
+		justify-content: center;
+		flex-direction: column;
+	}
+    .formcontato {
+		display: flex;
+		align-items: center;
+		margin: 20px;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+	.formulario {
+		margin: 0;
+		padding: 0;	
+	}
+	.box-quem-somos-texto p {
+		font-size: 13px;
+	}
+	.box-quem-somos-texto ul {
+		font-size: 13px;
+	}
+	.botao-contato-quem-somos {
+		font-size: 13px;
+	}
+	.imgselos {
+		width: 50px;
+	}
+	.tabela-selos {
+		justify-content: space-evenly;
+
+	}
+	.box-quem-somos-texto h2 {
+		font-size: 1em;		
+	}
+	.quem-somos-box-img img {
+		width: 94%;
+	}
+	.topopaginas {
+		display: none !important;
+	}
+	#adpt-galeria {
+		flex-wrap: wrap;
+	}
+	.topo-scroll .menu-principal ul li a {
+		font-size: 12px;
+	}
+	.qs-td{
+		display: block;
+		text-align: center;
+	}
+	ul.topicos {
+		text-align: left;
+	}
+	.texto-bloco-qs h1 {
+		text-align: center!important;
+	}
+	.conteudo-box {
+		flex-direction: column;
+	}
+	.form.formulario {
+		flex-direction: column;
+	}
+	.box-campos-formulario-home {
+		flex-direction: column;
+		align-items: center;
+	}
+	select#como_nos_conheceu_formulario {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.box-campos-formulario-home {
+		margin-top: 0;
+	}
+	#mensagem_formulario-home {
+		width: 80% !important;
+	}
+	.whatsapp-icon-fix {
+		display: none;
+	}
+	.Modern-Slider .item h3 {
+		font-size: 10vw;
+	}
+	.voltar-para-o-topo {
+		right: 9px;
+	}
+	.menu-principal {
+		display: none;
+	}
+	.barra-lateral {
+		display: none;
+	}
+	.menu-mobile {
+		display: block;
+		align-items: center;
+		order: 3;		
+	}
+	.rodape-mobile{
+		display: block;
+	}
+	#form-titulo{
+		display:none;
+	}
+	.base-topo {
+		display: none;
+	}
+	.slick-slider {
+		height: 94vh;
+	}
+	.Modern-Slider .item .img-fill {
+		height: 94vh;
+	}
+	.photos {
+		width: 100%;
+		height: 50vh;
+	}
+
+}
+
+@media (max-width:425px) {
+	.icones-validacao {
+		padding-bottom: 40px;
+	}
+	.box-quem-somos-texto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 79vw;
+		flex-direction: column;
+	}
+	.imgselos {
+		width: 15vw;
+	}
+
+	.texto-detalhes {
+		margin: 0;
+	}
+	#nome_formulario {
+		width: 100%;
+	}
+	#telefone_formulario {
+		width: 100%;
+	}
+	#email_formulario {
+		width: 100%;
+	}
+	
+	#nome_formulario {
+		width: 100%;
+	}
+	select#como_nos_conheceu_formulario {
+		width: 100%;
+	}
+	textarea#mensagem_formulario {
+		width: 100%;
+		height: 200px !important;
+	}
+	
+	.tabela-selos {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: #fff;
+		margin: 30px 0;
+		text-align: center;
+		flex-direction: column;
+	}
+	.conteudo-position {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.quem-somos-box-img {
+		width: 75vw;
+		display: flex;
+		justify-content: flex-end;
+		filter: opacity(100%);
+	}
+	.box-quem-somos-texto p {
+		text-align: justify;
+		width: 75vw;
+	}
+	.conteudo-box-home {
+		width: 100%;
+		display: flex;
+		padding: 10px;
+		font-family: verdana;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+	}
+	.formulario, .mapa-contato {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	.mapa-contato {
+		margin-top: 40px;
+	}
+	.mapa-contato p {
+		margin: 15px 0;
+	}
+	.formulario input, .formulario select, .formulario textarea {
+		width: 92%;
+	}
+	.formulario label {
+		margin-left: 6%;
+	}
+	.padrao-topo-1{
+		display: none;
+	}
+	.logo img {
+		width: 40%;
+	}	
+	.topo-scroll {
+		display: none;
+	}
+	.logo {
+		float: none;
+		text-align: center;
+		padding: 10px;
+		display: block;
+	}
+	.logo img {
+		max-width: 50%;
+	}
+	.contato-topo {
+		float: none;
+		text-align: center;
+		margin: 10px 0 0 0;
+	}
+	.telefone-topo {
+		display: none;
+	}
+	.breadcrumb {
+		font-size: 11px;
+		line-height: 18px;
+	}
+	.breadcrumb a {
+		margin: 0 3px;
+	}
+	.conteudo {
+		width: auto;
+		float: none;
+		padding: 0;
+	}
+	.conteudo-index {
+		padding: 110px 0 0;
+		text-align: center;
+	}
+	.conteudo h1 a {
+		font-size: 20px;
+	}
+	.texto h1 {
+		font-size: 20px;
+	}
+	.texto h2 {
+		font-size: 18px;
+	}
+	.texto h3 {
+		font-size: 16px;
+	}
+	.texto h4 {
+		font-size: 14px;
+	}
+	.banner {
+		display: none !important;		
+	}
+	.linkagem-interna {
+		font-family: 'blank';
+	}
+	.linkagem-interna span {
+		display: block;
+		margin-bottom: 10px;
+		font-family: 'Times New Roman', sans-serif;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	.linkagem-interna a {
+		font-size: 12px;
+		font-family: 'Times New Roman', sans-serif;
+		display: inline-block;
+		margin: 6px 6px;
+		border-bottom: 1px dotted #ccc;
+	}
+	.psobre {
+		width: 90%;
+		margin-top: 20px;
+	}
+	
+	.menu-rodape ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+	}
+	.box-quem-somos-texto ul {
+		width: 74vw;
+		list-style: inside;
+	}
+	.selosconf h3 {
+		font-size: 0.7em;
+		font-weight: bold;
+		padding: 8px 0px;
+	}
+	.barra-lateral-mobile {
+		display: block;
+		margin: 20px 0;
+		border: 1px solid #EEE;
+		background-color: #F8F8F8
+	}
+	.barra-lateral-conteudo-mobile ul li {
+		display: inline-block;
+		line-height: 20px;
+		padding: 5px;
+	}
+	.barra-lateral-conteudo-mobile h5 {
+		background-color: #FFF;
+		font-size: 16px;
+		padding: 5px;
+	}
+	.includes-padrao-conteudo {
+		display: none;
+	}
+	.saiba-mais-sobre p {
+		font-size: 12px;
+	}
+	.redes-sociais-conteudo {
+		text-align: center;
+	}
+	.galeria-imagens-box {
+		width: 250px;
+	}
+	.galeria-imagens-box-responsivo {
+		margin: 0 15px;
+	}
+	.imagens-palavras-chave {
+		text-align: center;
+	}
+	h5.titulo-produtos-relacionados {
+		margin: 5px 0 5px;
+		font-size: 14px;
+	}
+	.descricao-imagem {
+		font-size: 12px;
+	}
+	.regioes-aba-conteudo li {
+		width: 31%;
+	}
+	.regioes-conteudo ul li {
+		width: 48%;
+	}
+	.regioes-aba-titulo span {
+		margin: 5px;
+		border-radius: 3px;
+	}
+	.Modern-Slider .item .img-fill{
+		height:94vh;
+		background-color: #000;
+	}
+
+}
