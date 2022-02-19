@@ -1,23 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julio Vasconcelos</title>
-    <link rel="icon" href="./favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="icon" href="./imagens-midia/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/topo.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/rodape.css" />
 </head>
+
 <body>
 
-    <div class="base">
 
-        <h1>Seja bem vindo (a)!</h1>
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <a rel="nofollow" href="#" title="Home">
+                    <img src="imagens-midia/logotipo.png" alt="logotipo Julio Vasconcelos" width="150" height="42"
+                        loading="lazy" title="Julio Vasconcelos">
+                </a>
+            </div>
 
-        <div class="manutencao">
-            <img src="pagina-em-manutencao.jpg" alt="">
+
+            <nav>
+                <div class="menu-principal">
+                    <ul>
+                        <li>
+                            <a href="#" title="Página inicial">
+                                <box-icon name='home' type='solid'></box-icon> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Página de Exemplo">
+                                <box-icon name='library'></box-icon> Portfólio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Gerador">
+                                <box-icon type='solid' name='contact'></box-icon> Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="espaco-topo"></div>
+        <!-- <div class="base"> -->
+        <div class="conteudo">
+            <img src="./imagens-midia/pagina-em-manutencao.jpg" alt="">
+        </div>
+        <!-- </div> -->
+    </main>
+
+    <footer>
+
+        <div class="base">
+
+            <div class="rodape">
+
+                <div class="logo">
+                    <a rel="nofollow" href="#" title="Home">
+                        <img src="imagens-midia/logotiporodape.png" alt="logotipo Julio Vasconcelos" width="150"
+                            height="42" loading="lazy" title="Julio Vasconcelos">
+                    </a>
+                </div>
+
+                <div class="redes-sociais">
+                    <ul class="redes-sociais-rodape">
+                        <li><a href="https://www.linkedin.com/in/julio-vasconcelos/" target="blank">
+                                <box-icon name='linkedin' type='logo' color='#ffff' size='40px'></box-icon>
+                            </a></li>
+                        <li><a href="https://github.com/vasconjulio" target="blank">
+                                <box-icon type='logo' name='github' color='#ffff' size='40px'></box-icon>
+                            </a></li>
+                    </ul>
+                </div>               
+
+            </div>
+            <p style="text-align: center;color: #fff">Desenvolvedor Front-End Web Mobile</p>
+            <div class="webmobile">
+            <box-icon type='solid' name='devices' color='#ffff' size='90px'></box-icon>
+            </div>
+
+            <div class="divisor"></div>
         </div>
 
-    </div>
+        <div class="direitos-autorais-rodape">
+            <div class="base">
+                Este site está protegido pela Lei de Direitos Autorais. (Lei 9610 de 19/02/1998), sua reprodução total
+                ou
+                parcial é proibida nos termos da Lei.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <a href="https://api.whatsapp.com/send?phone=<?= $whatsappApi ?>" target="blank" rel="nofollow">
+        <div class="whatsapp-icon-fix">
+            <img src="imagens-midia/WhatsApp.png" width="40" height="40" alt="whatsapp-imagem" loading="lazy"
+                class="img-whats">
+        </div>
+    </a>
+
+
+
 </body>
+<script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
 </html>

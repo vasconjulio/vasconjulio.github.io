@@ -1,0 +1,67 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #EEE;
+}
+
+/*-------------CSS ESTILOS TOPO----------*/
+
+.topo {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.espaco-topo {
+    padding-top: 100px;
+}
+
+/*--------------- CONFIGURAÇÃO DO ESTILO DO MENU PRINCIPAL ----------------*/
+
+.menu-principal {
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+.menu-principal a {
+    color: #aaa;
+    padding: 0 10px;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.topo .logo img {
+    width: 90px;
+}
+
+.topo .menu-principal {
+    padding: 8px 5px;
+    width: 100%;
+    font-family: 'montserrat-classic', sans-serif;
+}
+
+.topo .menu-principal a {
+    color: rgb(0, 0, 0);
+}
+
+.topo .menu-principal a:hover {
+    color: rgb(255, 165, 0);    
+}   
