@@ -86,7 +86,7 @@ a:hover {
     }
 
     #nav.active #menu {
-        height: auto;
+        height: calc(100vh - 70px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -119,8 +119,9 @@ a:hover {
         height: 2px;
         background: currentColor;
         margin-top: 5px;
-        transition: .3s;
         position: relative;
+        transition: .3s;
+
     }
 
     #nav.active #hamburguer {
