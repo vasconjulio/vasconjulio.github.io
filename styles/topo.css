@@ -1,67 +1,138 @@
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: #EEE;
+ul {
+    margin: 0px;
+    padding: 0px;
 }
 
-/*-------------CSS ESTILOS TOPO----------*/
+a {
+    color: black;
+    text-decoration: none;
+}
 
-.topo {
-    max-width: 1280px;
-    margin: 0 auto;
+a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#header {
+    box-sizing: border-box;
     height: 100px;
+    padding: 1rem;
     display: flex;
-    width: 100%;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EEE;
+    position: fixed;
+    width: 100%;
+}
+
+#logo {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: flex;
+    padding: .5rem;
+}
+
+#nav a {
+    color: #000;
+    padding: 0 10px;
+    font-family: sans-serif;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+}
+
+#nav a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#btn-mobile {
+    display: none;
 }
 
 .espaco-topo {
     padding-top: 100px;
 }
 
-/*--------------- CONFIGURAÇÃO DO ESTILO DO MENU PRINCIPAL ----------------*/
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0;
+        background: #eee;
+        transition: .6s;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
 
-.menu-principal {
-    width: auto;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.07em;
+    #menu box-icon {
+        display: none;
+    }
+
+    #nav.active #menu {
+        height: auto;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
-
-.menu-principal a {
-    color: #aaa;
-    padding: 0 10px;
-    -webkit-transition: all 300ms linear 0s;
-    -o-transition: all 300ms linear 0s;
-    transition: all 300ms linear 0s;
-}
-
-.menu-principal ul {
-    list-style: none;
-}
-
-.menu-principal ul li {
-    display: inline-block;
-    position: relative;
-}
-
-.topo .logo img {
-    width: 90px;
-}
-
-.topo .menu-principal {
-    padding: 8px 5px;
-    width: 100%;
-    font-family: 'montserrat-classic', sans-serif;
-}
-
-.topo .menu-principal a {
-    color: rgb(0, 0, 0);
-}
-
-.topo .menu-principal a:hover {
-    color: rgb(255, 165, 0);    
-}   

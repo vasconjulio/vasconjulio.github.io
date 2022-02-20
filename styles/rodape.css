@@ -10,6 +10,10 @@ footer .base {
     max-width: 1080px;
 }
 
+#logorodape {
+    width: 100px;
+}
+
 .divisor {
     height: 2px;
     opacity: .2;
@@ -23,72 +27,12 @@ footer .base {
     font-size: 12px;
     padding: 35px 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .rodape p {
     text-align: center;
-}
-
-
-.menu-rodape {
-    font-family: 'montserrat-regular';
-    font-size: 0.9rem;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.menu-rodape li {
-    display: inline-block;
-    border-right: 1px solid #999;
-    padding: 0px 10px 0 5px;
-    margin: 8px 3px;
-}
-
-.menu-rodape li a {
-    color: #fafafa;
-    -webkit-transition: all 300ms linear 0s;
-    -o-transition: all 300ms linear 0s;
-    transition: all 300ms linear 0s;
-}
-
-.menu-rodape li a:hover {
-    color: #00aced;
-}
-
-.menu-rodape li:last-child {
-    border-right: none;
-    padding-right: 0;
-}
-
-.telefone-rodape {
-    float: left;
-    font-size: 16px;
-    padding: 0px 20px 16px;
-    letter-spacing: 1.2px;
-}
-
-.telefone-rodape img {
-    padding-left: 5px;
-}
-
-.telefone-rodape a {
-    /*Link aparece apenas no mobile*/
-    color: #0084b4;
-    text-decoration: none;
-}
-
-.telefone-rodape a:hover {
-    color: #666;
-}
-
-.endereco-rodape {
-    font-size: 12px;
-    float: right;
-    clear: right;
-    margin: 10px;
 }
 
 .direitos-autorais-rodape {
@@ -99,41 +43,6 @@ footer .base {
     width: 100%;
 }
 
-.icones-validacao {
-    padding-top: 10px;
-    float: right;
-    clear: right;
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icones-validacao img {
-    margin: 0 7px;
-}
-
-.menu-rodape ul li ul {
-    display: none;
-}
-
-.info-rodape {
-    max-width: 660px;
-    min-width: 280px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.info-rodape h1 {
-    font-family: 'Dosis-Bold';
-    font-size: 2.8rem;
-    margin: 20px 0 10px 0;
-}
-
-.info-rodape p {
-    font-size: 17px;
-    line-height: 23px;
-}
 
 
 /* ----------------------whatsapp icone ------------------ */
@@ -198,138 +107,9 @@ footer .base {
     flex-direction: column;
     align-items: center;
 }
+
 .webmobile p {
     color: #fff;
     font-family: sans-serif;
     font-size: 1.3em;
-}
-
-/* .redes-sociais-rodape li a:hover {
-	color: #000000;
-} */
-
-
-/* ----- Facebook ----- */
-
-.redes-sociais-rodape .icone-facebook {
-    background-color: #3e5b98;
-}
-
-.redes-sociais-rodape .icone-facebook:hover {
-    background-color: #526fac;
-}
-
-.redes-sociais-rodape .icone-facebook:before {
-    content: 'b';
-}
-
-
-/* ----- Twitter ----- */
-
-.redes-sociais-rodape .icone-twitter {
-    background-color: #4da7de;
-}
-
-.redes-sociais-rodape .icone-twitter:hover {
-    background-color: #61bbf2;
-}
-
-.redes-sociais-rodape .icone-twitter:before {
-    content: 'a';
-}
-
-
-/* ----- Google Plus ----- */
-
-.redes-sociais-rodape .icone-google {
-    background-color: #d93e2d;
-}
-
-.redes-sociais-rodape .icone-google:hover {
-    background-color: #ed5241;
-}
-
-.redes-sociais-rodape .icone-google:before {
-    content: 'c';
-}
-
-
-/* ----- Linkedin ----- */
-
-.redes-sociais-rodape .icone-linkedin {
-    background-color: #3371b7;
-}
-
-.redes-sociais-rodape .icone-linkedin:hover {
-    background-color: #4785cb;
-}
-
-.redes-sociais-rodape .icone-linkedin:before {
-    content: 'j';
-}
-
-
-/* ----- Youtube ----- */
-
-.redes-sociais-rodape .icone-youtube {
-    background-color: #e02a20;
-}
-
-.redes-sociais-rodape .icone-youtube:hover {
-    background-color: #f43e34;
-}
-
-.redes-sociais-rodape .icone-youtube:before {
-    content: 'r';
-}
-
-
-/* ----- Pinterest ----- */
-
-.redes-sociais-rodape .icone-pinterest {
-    background-color: #c92619;
-}
-
-.redes-sociais-rodape .icone-pinterest:hover {
-    background-color: #dd3a2d;
-}
-
-.redes-sociais-rodape .icone-pinterest:before {
-    content: 'd';
-}
-
-
-/* ----- RSS ----- */
-
-.redes-sociais-rodape .icone-rss {
-    background-color: #f26109;
-}
-
-.redes-sociais-rodape .icone-rss:hover {
-    background-color: #ff751d;
-}
-
-.redes-sociais-rodape .icone-rss:before {
-    content: ',';
-}
-
-@media (max-width: 955px) {
-    .contato-rodape {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .endereco-rodape {
-        float: none;
-    }
-
-    .telefone-rodape {
-        float: none;
-    }
-
-    .icones-validacao {
-        float: none;
-    }
 }

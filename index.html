@@ -15,47 +15,30 @@
 <body>
 
 
-    <header>
-        <div class="topo">
-            <div class="logo">
-                <a rel="nofollow" href="#" title="Home">
-                    <img src="imagens-midia/logotipo.png" alt="logotipo Julio Vasconcelos" width="150" height="42"
-                        loading="lazy" title="Julio Vasconcelos">
-                </a>
-            </div>
+    <header id="header">
+        <a rel="nofollow" href="#" title="Home">
+            <img id="logo" src="imagens-midia/logotipo.png" alt="logotipo Julio Vasconcelos">
+        </a>
 
 
-            <nav>
-                <div class="menu-principal">
-                    <ul>
-                        <li>
-                            <a href="#" title="Página inicial">
-                                <box-icon name='home' type='solid'></box-icon> Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Página de Exemplo">
-                                <box-icon name='library'></box-icon> Portfólio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Gerador">
-                                <box-icon type='solid' name='contact'></box-icon> Contato
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <nav id="nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li> <a href="#" title="Página inicial"> Home </a> </li>
+                <li> <a href="#"> Portfólio </a> </li>
+                <li> <a href="#" title="Gerador"> Contato </a> </li>
+            </ul>
+        </nav>
         </div>
     </header>
 
     <main>
         <div class="espaco-topo"></div>
-        <!-- <div class="base"> -->
         <div class="conteudo">
             <img src="./imagens-midia/pagina-em-manutencao.jpg" alt="">
         </div>
-        <!-- </div> -->
     </main>
 
     <footer>
@@ -64,12 +47,9 @@
 
             <div class="rodape">
 
-                <div class="logo">
-                    <a rel="nofollow" href="#" title="Home">
-                        <img src="imagens-midia/logotiporodape.png" alt="logotipo Julio Vasconcelos" width="150"
-                            height="42" loading="lazy" title="Julio Vasconcelos">
-                    </a>
-                </div>
+                <a rel="nofollow" href="#" title="Home">
+                    <img id="logorodape" src="imagens-midia/logotiporodape.png" alt="logotipo Julio Vasconcelos">
+                </a>
 
                 <div class="redes-sociais">
                     <ul class="redes-sociais-rodape">
@@ -113,5 +93,6 @@
 
 </body>
 <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+<script src="./js-midia/scripts.js"></script>
 
 </html>
