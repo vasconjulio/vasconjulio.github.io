@@ -4,14 +4,21 @@
 
 footer {
     background-color: #222;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 footer .base {
     max-width: 1080px;
 }
 
-#logorodape {
+.logotipo {
     width: 100px;
+}
+
+.logotipo img {
+    max-width: 100%;
 }
 
 .divisor {
@@ -41,6 +48,13 @@ footer .base {
     text-align: center;
     padding: 40px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.direitos-autorais-rodape p {
+    width: 90%;
+    text-align: center;
 }
 
 
@@ -59,19 +73,9 @@ footer .base {
     height: auto;
 }
 
-@font-face {
-    font-family: 'si';
-    src: url('fonts-midia/socicon.eot');
-    src: url('fonts-midia/socicon.eot?#iefix') format('embedded-opentype'), url('fonts-midia/socicon.woff') format('woff'), url('fonts-midia/socicon.ttf') format('truetype'), url('fonts-midia/socicon.svg#icomoonregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 .redes-sociais-rodape {
     float: none;
     clear: both;
-    padding: 15px 0 0 0;
     list-style: none;
     font-family: 'blank';
     color: #00aced;
@@ -85,21 +89,7 @@ footer .base {
     display: inline-block;
 }
 
-.redes-sociais-rodape li a {
-    font-family: si;
-    text-align: center;
-    display: block;
-    position: relative;
-    text-decoration: none;
-    border-radius: 50%;
-    font-size: 14px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    color: #ffffff;
-    /* cor dos ícones */
-    transition: all 0.2s ease 0s;
-}
+
 
 .webmobile {
     width: 100%;
@@ -112,4 +102,23 @@ footer .base {
     color: #fff;
     font-family: sans-serif;
     font-size: 1.3em;
+}
+
+@media (max-width: 600px) {
+
+    .logotipo img {
+        max-width: 20vw;
+    }
+
+    .rodape {
+        padding: 10px 0 0 0;
+    }
+
+    .direitos-autorais-rodape {
+        padding: 0 0 40px 0;
+    }
+
+    .webmobile p {
+        font-size: 1rem;
+    }
 }
