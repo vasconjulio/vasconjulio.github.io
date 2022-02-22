@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: rgb(222 222 222);
+    background: rgb(255, 255, 255);
 }
 
 /*--------------------------------------------------------------
@@ -28,6 +28,7 @@ body {
     color: #333;
     align-items: center;
     justify-content: center;
+    height: 50vh;
 }
 
 .conteudo img {
