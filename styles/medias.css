@@ -1,0 +1,117 @@
+/* medias */
+
+/* @media (max-width: 600px) { */
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 0;
+    background: rgb(0, 0, 0);
+    transition: .6s;
+    z-index: 999999;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#menu box-icon {
+    display: none;
+}
+
+#nav.active #menu {
+    height: calc(100vh);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    /* border-bottom: 2px solid rgba(0, 0, 0, .05); */
+}
+
+#btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+}
+
+#hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: .3s;
+}
+
+#nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+#nav.active #hamburguer:hover {
+    transform: rotate(180deg);
+    transition: .20s linear;
+}
+
+@media (max-width: 600px) {
+
+    .logotipo img {
+        max-width: 20vw;
+    }
+
+    .rodape {
+        padding: 10px 0 0 0;
+    }
+
+    .direitos-autorais-rodape {
+        padding: 0 0 40px 0;
+    }
+
+    .webmobile p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .logotipo img {
+        max-width: 20vw;
+    }
+
+    .rodape {
+        padding: 10px 0 0 0;
+    }
+
+    .direitos-autorais-rodape {
+        padding: 0 0 40px 0;
+    }
+
+    .webmobile p {
+        font-size: 1rem;
+    }
+}
