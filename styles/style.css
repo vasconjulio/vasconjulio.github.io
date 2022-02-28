@@ -88,6 +88,8 @@ a {
     background: none;
     cursor: pointer;
     gap: .5rem;
+    align-items: center;
+
 }
 
 
@@ -180,14 +182,6 @@ footer .base {
 
 .logotipo img {
     max-width: 100%;
-}
-
-.divisor {
-    height: 2px;
-    opacity: .2;
-    background-color: rgba(255, 255, 255, 0.479);
-    max-width: 1080px;
-    margin: 10px 10px;
 }
 
 .rodape {
