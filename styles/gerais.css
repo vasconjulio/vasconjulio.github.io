@@ -5,14 +5,193 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    scroll-behavior: smooth;
+}
 
+/* Reset CSS HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    background: rgb(255, 255, 255);
+    line-height: 1;
+    font-family: sans-serif, 'roboto';
+    word-wrap: break-word;
+    background: rgb(238 238 238);
+
+}
+
+* {
+    outline: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+/*--------TABELAS--------*/
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.td {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table .ico {
+    text-align: center;
+}
+
+.table .ico img {
+    width: 80px;
+}
+
+.base-galeria {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.table .galeria {
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+}
+
+.table .galeria:hover {
+    background-color: red;
+}
+
+.table .galeria h4,
+.table .galeria h5 {
+    text-transform: uppercase;
+    letter-spacing: -1.0px;
+}
+
+.table .galeria:hover h4 {
+    color: red;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+}
+
+.table .galeria h5 {
+    color: #777;
+}
+
+.table .galeria img {
+    border: 0;
+}
+
+.galeria-img {
+    max-height: 247px;
+}
+
+.galeria-img:hover img {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: all 0.15s ease-out;
+    z-index: -999;
+    opacity: 0.2;
+}
+
+.galeria-img img:hover {
+    opacity: 0.8;
+}
+
+.galeria-detalhes {
+    padding: 20px 0;
+    background-color: #fff;
+    /*border-right: 1px solid #ccc;*/
+}
+
+.qs-align {
+    vertical-align: top;
+}
+
+.texto-bloco-qs {
+    padding: 20px 40px 35px;
+}
+
+.texto-bloco-qs p {
+    text-align: justify !important;
+    font-size: 17px;
+    line-height: 1.3em;
+}
+
+.texto-bloco-qs .botao-contato {
+    margin: 35px 0 0;
+}
+
+.texto-bloco-qs h1 {
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+.clear {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.td-top {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 /*--------------------------------------------------------------
@@ -24,6 +203,92 @@ body {
     margin: 0 auto;
 }
 
+.base-topo {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.botao-barra {
+    font-family: 'montserrat-bold', sans-serif;
+    background-color: #333;
+    /*height: 20px;*/
+    padding: 21px;
+    float: right;
+    /*-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	background-position: center center;
+	background-repeat: no-repeat;*/
+    background-size: 300% auto;
+    color: #fff;
+    font-size: 11px !important;
+    /*font-weight: 800 !important;*/
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+}
+
+.botao-barra:hover {
+    background-image: url(./imagens-midia/m/calc.png);
+    background-size: 50% auto;
+}
+
+.barra-lateral {
+    width: 250px;
+}
+
+.barra-lateral-mobile {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+- Tags Padrão
+--------------------------------------------------------------*/
+p+p {
+    margin-top: 0.5em;
+}
+
+a {
+    color: rgb(255 255 255);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 12px 0px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    padding: 8px 0px;
+}
+
+h4 {
+    font-size: 1.12em;
+    font-weight: bold;
+    padding: 6px 0px;
+}
+
+h5 {
+    font-size: .83em;
+    font-weight: 700;
+    padding: 5px 0px;
+}
+
+h6 {
+    font-size: .75em;
+    font-weight: 600;
+    padding: 4px 0px;
+}
+
 .espaco-topo {
     padding-top: 184px;
 }
+
+@font-face {}

@@ -7,7 +7,7 @@ function toggleMenu() {
 	}
 
 
-btnMobile.addEventListener('click', toggleMenu);
+// btnMobile.addEventListener('click', toggleMenu);
 
 
 
@@ -15,6 +15,6 @@ btnMobile.addEventListener('click', toggleMenu);
 
 window.addEventListener("scroll", function(){
 	const header = document.querySelector("#header");
-	header.classList.toggle("topo-scroll", window.scrollY > 148);
+	header.classList.toggle("topo-scroll", window.scrollY > 90);
 })
 
